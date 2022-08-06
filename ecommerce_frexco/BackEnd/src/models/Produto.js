@@ -15,4 +15,3 @@ const Produto = mongoose.model("Produto",{
 })
 
 module.exports = Produto
-
