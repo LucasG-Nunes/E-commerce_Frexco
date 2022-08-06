@@ -1,18 +1,41 @@
+require('dotenv').config()
 const express = require("express");
+const mongoose = require("mongoose");
 const cors = require("cors");
-const Routes = require("./routes");
+
 
 const app = express();
-app.use(cors())
+app.use(cors());
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.header("Access-Control-Allow-Methods", value="GET,PUT,POST,DELETE")
-    next();
-  });
+//forma de ler json
+app.use(
+    express.urlencoded({
+        extended:true,
+    }),
+)
+app.use(express.json())
 
 
+
+//Rotas da API
+const routes = require ('./Routes')
+app.use('/produtos',routes)
+
+
+//userconfig
+const USER = process.env.USER ;
+const PASSWORD = encodeURIComponent(process.env.PASSWORD);
+
+//Conectando ao MongoDB e ao ter sucesso inicia o servidor.
 app.use(express.json());
-
-app.listen(3333,()=>{console.log("servidor iniciado na porta 3333")})
+mongoose
+  .connect(
+    `mongodb+srv://${USER}:${PASSWORD}@apicluster.jbocyvi.mongodb.net/bancodaapi?retryWrites=true&w=majority`
+  )
+  .then(() => {
+    app.listen(3333);
+    console.log("conectamos ao mongodb");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
