@@ -1,12 +1,17 @@
 import { useAxios } from "./Hooks/useAxios";
-import Navbar from "./Components/Navbar/Navbar";
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Home from "./Pages/Home/Home";
+
 function App() {
   const {data} = useAxios();
   console.log(data)
   return (
     <div className="App">
-     <h2>Iniciando o desenvolvimento</h2>
-     <Navbar/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
