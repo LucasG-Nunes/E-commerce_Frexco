@@ -1,3 +1,13 @@
 .Navbar{
-    background-color: green;
+    background-color: #3A3E73;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .Itens{
+        span{
+            margin: 1em;
+            color: #fff;
+        }
+
+    }
 }
