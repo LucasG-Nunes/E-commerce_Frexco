@@ -6,7 +6,7 @@ export const useAxios = () => {
   useEffect(() => {
     const resData = async () => {
       try {
-        const response = await axios
+        await axios
           .get("http://localhost:3333/produtos", {
             headers: {
               "Access-Control-Allow-Origin": "*",
