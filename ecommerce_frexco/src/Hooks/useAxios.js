@@ -7,12 +7,12 @@ export const useAxios = () => {
     const resData = async () => {
       try {
         const response = await axios
-          .get("http://dummyjson.com/products", {
+          .get("http://localhost:3333/produtos", {
             headers: {
               "Access-Control-Allow-Origin": "*",
             },
           })
-          .then((res) => setData(res.data.products));
+          .then((res) => setData(res.data));
       } catch (err) {
         console.log(err);
       }
