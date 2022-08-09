@@ -2,6 +2,7 @@ import { useAxios } from "../../Hooks/useAxios"
 import { useContext } from "react"
 import { CarrinhoContext } from "../../Context/CarrinhoContext"
 import {InputContext} from "../../Context/InputContext"
+import {NavLink} from "react-router-dom"
 const DisplayProdutos = () => {
   const {  setFruit } = useContext(CarrinhoContext); 
   const {input} = useContext(InputContext)
@@ -9,41 +10,41 @@ const DisplayProdutos = () => {
   return (
     <>
     {data && !input ? 
-    <div className="container">
+    <container className="container">
     {data.map((produto) => (
-      <div className="modalProduto">
+      <section className="modalProduto">
         <img src={produto.image} alt="" />
         <div className="downModal">
           <div>
             <h4>{produto.name}</h4>
             <span>${produto.price}</span>
           </div>
-          <button onClick={()=>{setFruit(produto._id)}}>Adicionar ao carrinho</button>
+          <NavLink to="/carrinho">
+            <button onClick={()=>{setFruit(produto._id)}}>+</button>
+            </NavLink>
         </div>
-      </div>
+      </section>
     ))}
-  </div> 
+  </container> 
   :null
- 
-
   }
 
   {data && input ?
-  <div className="container">
+  <container className="container">
   {data.map((fruta)=>
     fruta.name.includes(input)?(
-        <div className="modalProduto">
+        <section className="modalProduto">
         <img src ={fruta.image} alt=""/>
         <div className="downModal">
           <div>
             <h4>{fruta.name}</h4>
             <span>${fruta.price}</span>
           </div>
-          <button onClick={()=>{setFruit(fruta._id)}}>Adicionar ao carrinho</button>
+          <button onClick={()=>{setFruit(fruta._id)}}>+</button>
         </div>
-        </div>
+        </section>
     ): (console.log('null'))
-  )}</div>
+  )}</container>
   :null
     }</>
 )
