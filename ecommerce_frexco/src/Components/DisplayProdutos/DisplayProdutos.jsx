@@ -3,8 +3,8 @@ import { useContext } from "react"
 import { CarrinhoContext } from "../../Context/CarrinhoContext"
 import {InputContext} from "../../Context/InputContext"
 const DisplayProdutos = () => {
-  const {  setFruit } = useContext(CarrinhoContext); //tentei criar um context colocar em local storage e indo adicionando no carrinho
-  const {input} = useContext(InputContext) // caso tenha algo no input fazer um filter mostrando os produtos que tenham a letra
+  const {  setFruit } = useContext(CarrinhoContext); 
+  const {input} = useContext(InputContext)
   const { data } = useAxios()
   return (
     <>
