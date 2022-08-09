@@ -1,10 +1,48 @@
 .containerIntrodutorio{
     display: flex;
-    background-color: green;
+    background-color: #20130a;
     justify-content: center;
     align-items: center;
     .text{
         display: flex;
         flex-direction: column;
+        span{
+            font-size: 3.5em;
+            color: #e9f0c9;
+            font-weight: bold;
+            font-family: 'Uchen', serif
+        }
+        p{
+            max-width: 15em;
+            font-size: 2em;
+            color: #e9f0c9;
+            font-weight: bold;
+        }
+    }
+    .image{
+        background-color: pink;
+        border-radius: 100%;
+        border: 3px solid #ffff;
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width:800px){
+    .containerIntrodutorio{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px){
+    .containerIntrodutorio{
+        .image{
+            display: none;
+        }
+        .text{
+            span,p{
+                text-align: center;
+            }
+        }
     }
 }

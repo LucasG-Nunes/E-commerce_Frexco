@@ -3,6 +3,239 @@
   padding: 0;
 }
 
+footer {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  color: #fff;
+}
+
+footer span {
+  font-weight: bold;
+  color: #61dafb;
+}
+
 .Navbar {
-  background-color: green;
+  background-color: #20130a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Navbar h1 {
+  letter-spacing: 5px;
+  color: white;
+}
+.Navbar h1:hover {
+  cursor: pointer;
+}
+.Navbar input {
+  width: 35em;
+  border-radius: 20px;
+  border: none;
+  height: 2em;
+}
+.Navbar .Itens .NavLink {
+  margin: 1em;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Navbar .Itens .NavLink:hover {
+  color: #e9f0c9;
+}
+
+@media screen and (max-width: 700px) {
+  .Navbar input {
+    display: none;
+  }
+}
+.containerIntrodutorio {
+  display: flex;
+  background-color: #20130a;
+  justify-content: center;
+  align-items: center;
+}
+.containerIntrodutorio .text {
+  display: flex;
+  flex-direction: column;
+}
+.containerIntrodutorio .text span {
+  font-size: 3.5em;
+  color: #e9f0c9;
+  font-weight: bold;
+  font-family: "Uchen", serif;
+}
+.containerIntrodutorio .text p {
+  max-width: 15em;
+  font-size: 2em;
+  color: #e9f0c9;
+  font-weight: bold;
+}
+.containerIntrodutorio .image {
+  background-color: pink;
+  border-radius: 100%;
+  border: 3px solid white;
+  margin: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .containerIntrodutorio {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .containerIntrodutorio .image {
+    display: none;
+  }
+  .containerIntrodutorio .text span, .containerIntrodutorio .text p {
+    text-align: center;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(180deg, #20130a, #142026);
+}
+.container .modalProduto {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  background-image: linear-gradient(180deg, #20130a, #142026);
+  margin: 20px;
+  height: 25em;
+  justify-content: space-around;
+  border-radius: 40px;
+}
+.container .modalProduto h4 {
+  text-align: center;
+  color: #e9f0c9;
+}
+.container .modalProduto img {
+  width: 12em;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+.container .modalProduto .downModal {
+  display: flex;
+  justify-content: space-around;
+}
+.container .modalProduto .downModal span {
+  color: #e9f0c9;
+}
+.container .modalProduto .downModal button {
+  border-radius: 20px;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, white, #142026);
+  color: #20130a;
+  transition: 3s;
+  -webkit-animation: colors 5s ease infinite;
+          animation: colors 5s ease infinite;
+}
+.container .modalProduto .downModal button:hover {
+  color: #e9f0c9;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.background {
+  background-image: linear-gradient(180deg, #20130a, #142026);
+  height: 100vh;
+}
+
+.containerCarrinho {
+  display: flex;
+  justify-content: space-evenly;
+}
+.containerCarrinho img {
+  width: 12em;
+  border-radius: 40px;
+}
+.containerCarrinho .Informations {
+  display: flex;
+  flex-direction: column;
+}
+.containerCarrinho .Informations h4 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+.containerCarrinho .Informations .nutritions {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  margin-bottom: 1.5em;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1em;
+}
+.containerCarrinho .Informations .buttons {
+  display: flex;
+}
+.containerCarrinho .Informations .buttons button {
+  width: 10em;
+  margin: 0 auto;
+  margin-bottom: 1.3em;
+}
+.containerCarrinho .Informations .valorTotal {
+  text-align: right;
+  color: white;
+}
+.containerCarrinho .Informations .header {
+  display: flex;
+  justify-content: space-between;
+}
+.containerCarrinho .Informations .header button {
+  width: 2em;
+  height: 2em;
+}
+.containerCarrinho .Quantidade {
+  text-align: center;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.avisoVazio {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 560px) {
+  .containerCarrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerCarrinho img {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Index.css.map */

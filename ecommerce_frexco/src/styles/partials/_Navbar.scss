@@ -1,13 +1,38 @@
 .Navbar{
-    background-color: #3A3E73;
+    background-color: #20130a;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    h1{
+        letter-spacing: 5px;
+        color: #ffff;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    input{
+        width: 35em;
+        border-radius: 20px;
+        border: none;
+        height: 2em;
+    }
     .Itens{
-        span{
+        .NavLink{
             margin: 1em;
             color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                color: #e9f0c9;
+            }
         }
 
+    }
+}
+@media screen and (max-width:700px){
+    .Navbar{
+        input{
+            display: none;
+        }
     }
 }

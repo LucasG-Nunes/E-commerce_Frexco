@@ -1,0 +1,80 @@
+.background{
+    background-image: linear-gradient(180deg,#20130a,#142026);
+    height: 100vh;
+}
+.containerCarrinho{
+    display: flex;
+    justify-content: space-evenly;
+
+    img{
+        width: 12em;
+        border-radius: 40px;
+    }
+    .Informations{
+        display: flex;
+        flex-direction: column;
+
+        h4{
+            color: white;
+            font-size: 2em;
+            margin-bottom: 1.5em;
+        }
+        .nutritions{
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            width: 20em;
+            margin-bottom: 1.5em;
+            background-color: white;
+            border-radius: 20px;
+            padding: 1em;
+        }
+        .buttons{
+            display: flex;
+
+            button{
+                width: 10em;
+                margin: 0 auto;
+                margin-bottom: 1.3em;
+            }
+
+        }
+        .valorTotal{
+            text-align: right;
+            color: white;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            button{
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+
+.Quantidade{
+    text-align: center;
+    color: white;
+    margin-bottom: 2px;
+}
+
+}
+.avisoVazio{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:560px){
+    .containerCarrinho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 10rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+}
