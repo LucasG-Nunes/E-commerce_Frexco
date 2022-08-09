@@ -5,6 +5,8 @@ const Produto = mongoose.model("Produto",{
     name: String,
     family: String,
     order: String,
+    price:Number,
+    image: String,
     nutritions:{
         carbohydrates: Number,
         protein: Number,
