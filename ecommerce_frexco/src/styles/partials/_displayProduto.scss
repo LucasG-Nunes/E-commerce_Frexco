@@ -1,13 +1,17 @@
+$firstParamGradient : #20130a;
+$secondParamsGradient: #142026;
+$thirdParamsGradient: #ffff;
+$fontColor: #e9f0c9;
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: linear-gradient(180deg,#20130a,#142026);
+    background-image: linear-gradient(180deg,$firstParamGradient,$secondParamsGradient);
     .modalProduto{
         display: flex;
         flex-direction: column;
         width: 20em;
-        background-image: linear-gradient(180deg,#20130a,#142026);
+        background-image: linear-gradient(180deg,$firstParamGradient,$secondParamsGradient);
         margin: 20px;
         height: 25em;
         justify-content: space-around;
@@ -26,19 +30,19 @@
         display: flex;
         justify-content: space-around;
         span{
-            color: #e9f0c9;
+            color:$fontColor ;
         }
         button{
             border-radius: 20px;
             border:none;
             padding: 1em;
             cursor: pointer;
-            background-image: linear-gradient(90deg,white,#142026);
+            background-image: linear-gradient(90deg,$thirdParamsGradient,$secondParamsGradient);
             color: #20130a ;
             transition: 3s;
                 animation: colors 5s ease infinite;
             &:hover{
-                color: #e9f0c9;
+                color: $fontColor;
             }
         }
     }

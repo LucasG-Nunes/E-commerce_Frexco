@@ -1,5 +1,10 @@
+$firstParamGradient : #20130a;
+$secondParamsGradient: #142026;
+$borderNutritionsColor: green;
+$backgroundNutritionsColor: #ffff;
+$fontColor:#ffff;
 .background{
-    background-image: linear-gradient(180deg,#20130a,#142026);
+    background-image: linear-gradient(180deg,$firstParamGradient,$secondParamsGradient);
     height: 100vh;
 }
 .containerCarrinho{
@@ -15,17 +20,17 @@
         flex-direction: column;
 
         h4{
-            color: white;
+            color: $fontColor;
             font-size: 2em;
             margin-bottom: 1.5em;
         }
         .nutritions{
-            border: 1px solid green;
+            border: 1px solid $borderNutritionsColor;
             display: flex;
             flex-direction: column;
             width: 20em;
             margin-bottom: 1.5em;
-            background-color: white;
+            background-color: $backgroundNutritionsColor;
             border-radius: 20px;
             padding: 1em;
         }
@@ -41,7 +46,7 @@
         }
         .valorTotal{
             text-align: right;
-            color: white;
+            color: $fontColor;
         }
         .header{
             display: flex;
@@ -55,14 +60,14 @@
 
 .Quantidade{
     text-align: center;
-    color: white;
+    color: $fontColor;
     margin-bottom: 2px;
 }
 
 }
 .avisoVazio{
     text-align: center;
-    color: white;
+    color: $fontColor;
 }
 
 @media screen and (max-width:560px){

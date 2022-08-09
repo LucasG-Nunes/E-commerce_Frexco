@@ -38,7 +38,7 @@ footer span {
 }
 .Navbar .Itens .NavLink {
   margin: 1em;
-  color: #fff;
+  color: white;
   cursor: pointer;
   text-decoration: none;
 }

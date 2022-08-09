@@ -1,6 +1,10 @@
+$backgroundColor: #20130a;
+$fontColor: #e9f0c9;
+$bordImageColor: #ffff;
+$backgroundImageColor: pink;
 .containerIntrodutorio{
     display: flex;
-    background-color: #20130a;
+    background-color: $backgroundColor;
     justify-content: center;
     align-items: center;
     .text{
@@ -8,21 +12,21 @@
         flex-direction: column;
         span{
             font-size: 3.5em;
-            color: #e9f0c9;
+            color: $fontColor;
             font-weight: bold;
             font-family: 'Uchen', serif
         }
         p{
             max-width: 15em;
             font-size: 2em;
-            color: #e9f0c9;
+            color: $fontColor;
             font-weight: bold;
         }
     }
     .image{
-        background-color: pink;
+        background-color: $backgroundImageColor;
         border-radius: 100%;
-        border: 3px solid #ffff;
+        border: 3px solid $bordImageColor;
         margin: 1em;
     }
 }

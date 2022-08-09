@@ -1,5 +1,9 @@
+$background: #20130a;
+$fontColor : #ffff;
+$fontHoverColor: #e9f0c9;
+
 .Navbar{
-    background-color: #20130a;
+    background-color: $background;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -19,11 +23,11 @@
     .Itens{
         .NavLink{
             margin: 1em;
-            color: #fff;
+            color: $fontColor;
             cursor: pointer;
             text-decoration: none;
             &:hover{
-                color: #e9f0c9;
+                color: $fontHoverColor;
             }
         }
 
