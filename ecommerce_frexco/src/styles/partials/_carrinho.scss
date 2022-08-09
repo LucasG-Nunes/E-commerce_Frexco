@@ -1,5 +1,6 @@
 $firstParamGradient : #20130a;
 $secondParamsGradient: #142026;
+$thirdParamsGradient: #ffff;
 $borderNutritionsColor: green;
 $backgroundNutritionsColor: #ffff;
 $fontColor:#ffff;
@@ -36,11 +37,19 @@ $fontColor:#ffff;
         }
         .buttons{
             display: flex;
-
+            justify-content: center;
             button{
+                border:none;
                 width: 10em;
-                margin: 0 auto;
-                margin-bottom: 1.3em;
+                padding: 1em;
+                cursor: pointer;
+                background-image: linear-gradient(90deg,$thirdParamsGradient,$secondParamsGradient);
+                color: #20130a ;
+                transition: 3s;
+                    animation: colors 5s ease infinite;
+                &:hover{
+                    color: $fontColor;
+                }
             }
 
         }
@@ -82,4 +91,15 @@ $fontColor:#ffff;
         }
     }
     
+}
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
