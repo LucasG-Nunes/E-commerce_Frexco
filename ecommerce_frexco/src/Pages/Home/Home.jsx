@@ -4,9 +4,9 @@ import image from "../../Images/personFruits.png"
 const Home = () => {
 
   return (
-    <div>
+    <container>
         <Navbar/>
-        <div className="containerIntrodutorio">
+        <section className="containerIntrodutorio">
           <div className="text">
             <span>HortiFruit Ecommerce</span>
             <p>uma vida melhor começa por uma alimentação saudável</p>
@@ -14,14 +14,14 @@ const Home = () => {
           <div className="image">
             <img src={image} alt="personfood" />
           </div>
-        </div>
+        </section>
         <DisplayProdutos/>
         <footer>
           <p>
             <span>Desenvolvido por Lucas Gabriel @ 2022</span>
           </p>
         </footer>
-    </div>
+    </container>
   )
 }
 
