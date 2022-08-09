@@ -7,11 +7,11 @@ $fontColor:#ffff;
 .background{
     background-image: linear-gradient(180deg,$firstParamGradient,$secondParamsGradient);
     height: 100vh;
+
 }
 .containerCarrinho{
     display: flex;
     justify-content: space-evenly;
-
     img{
         width: 12em;
         border-radius: 40px;
@@ -66,13 +66,25 @@ $fontColor:#ffff;
             }
         }
     }
+    .confirmarCompra{
+        border:none;
+
+        padding: 1em;
+        cursor: pointer;
+        background-image: linear-gradient(90deg,$thirdParamsGradient,$secondParamsGradient);
+        color: #20130a ;
+        transition: 3s;
+            animation: colors 5s ease infinite;
+        &:hover{
+            color: $fontColor;
+        }
+    }
 
 .Quantidade{
     text-align: center;
     color: $fontColor;
     margin-bottom: 2px;
 }
-
 }
 .avisoVazio{
     text-align: center;
