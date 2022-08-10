@@ -1,4 +1,4 @@
-# Example React App
+# Ecommerce React App
 
 ## Descrição 
 
