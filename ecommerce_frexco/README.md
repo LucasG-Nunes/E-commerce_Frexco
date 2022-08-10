@@ -4,6 +4,25 @@
 
 Este é um projeto desenvolvido, um ecommerce com algumas interações. Inicialmente tive um problema com a API e cheguei a conclusão que provavelmente era um erro no servidor da API. Decidi criar a minha própria API com os mesmos dados da API que vocês disponibilizaram com alguns ajustes incrementais. Espero que gostem!
 
+## Estrutura da model
+### Estrutura
+{
+    genus: String,
+    name: String,
+    family: String,
+    order: String,
+    price:Number,
+    image: String,
+    nutritions:{
+        carbohydrates: Number,
+        protein: Number,
+        fat: Number,
+        calories:Number,
+        sugar: Number
+  }
+  
+
+
 ## Instalação
 - Clone o repositorio clicando em code e copie a url
 - No seu terminal digite " git clone "
