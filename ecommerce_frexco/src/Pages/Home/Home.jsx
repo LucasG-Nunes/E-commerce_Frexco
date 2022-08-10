@@ -18,7 +18,7 @@ const Home = () => {
         <DisplayProdutos/>
         <footer>
           <p>
-            <span>Desenvolvido por Lucas Gabriel @ 2022</span>
+            <span>Desenvolvido por Lucas @ 2022</span>
           </p>
         </footer>
     </container>
