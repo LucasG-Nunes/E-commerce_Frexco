@@ -33,10 +33,10 @@ Este é um projeto desenvolvido, um ecommerce com algumas interações. Inicialm
 ## Backend
 - Após copiados os arquivos na sua maquina, navegue até o diretorio com o nome Backend
 - No seu terminal digite " npm install" para instalar as dependencias do projeto
-  - inicie o servidor com o script npm start no seu terminal
+  - inicie o servidor com o script ´npm start´ no seu terminal
 
 ## Frontend
 - Após copiados os arquivos na sua maquina, navegue até o diretorio com o nome ecommerce_frexco
 - No seu terminal digite " npm install" para instalar as dependencias do projeto
-    - inicie o servidor com o script npm start no seu terminal
+    - inicie a aplicação com o script ´npm start´ no seu terminal
 
